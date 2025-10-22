@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 19:07+0000\n"
-"PO-Revision-Date: 2025-10-22 05:31+0000\n"
+"PO-Revision-Date: 2025-10-22 09:31+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "indicator-nightlight-extra/sv/>\n"
@@ -43,8 +43,8 @@ msgstr ""
 
 #: data/nightlight.metainfo.xml.in:58
 msgid "Show tooltip on hover"
-msgstr ""
+msgstr "Visa verktygstips vid hovring"
 
 #: data/nightlight.metainfo.xml.in:59
 msgid "Performance improvements"
-msgstr ""
+msgstr "Förbättringar av prestanda"
