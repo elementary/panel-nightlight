@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 19:07+0000\n"
-"PO-Revision-Date: 2025-10-22 09:58+0000\n"
+"PO-Revision-Date: 2025-10-30 17:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "nightlight/sv/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: src/Indicator.vala:106
 msgid "Night Light is on"
-msgstr "Nattlampa är på"
+msgstr "Nattljus är på"
 
 #: src/Indicator.vala:107
 msgid "Middle-click to snooze"
@@ -23,7 +23,7 @@ msgstr "Mittenklicka för att snooza"
 
 #: src/Indicator.vala:110
 msgid "Night Light is snoozed"
-msgstr "Nattlampa är snoozad"
+msgstr "Nattljus är snoozad"
 
 #: src/Indicator.vala:111
 msgid "Middle-click to enable"
