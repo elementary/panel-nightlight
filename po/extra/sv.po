@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-09 19:07+0000\n"
-"PO-Revision-Date: 2025-10-22 09:58+0000\n"
+"PO-Revision-Date: 2025-10-30 17:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/wingpanel/"
 "indicator-nightlight-extra/sv/>\n"
@@ -39,7 +39,7 @@ msgstr "Uppdaterade översättningar"
 
 #: data/nightlight.metainfo.xml.in:42
 msgid "Increase the maximum possible display warmth"
-msgstr "Öka den maximala möjliga skärmvärmen"
+msgstr "Öka den maximalt möjliga skärmvärmen"
 
 #: data/nightlight.metainfo.xml.in:58
 msgid "Show tooltip on hover"
