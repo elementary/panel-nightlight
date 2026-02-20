@@ -10,7 +10,7 @@ You'll need the following dependencies:
     libglib2.0-dev
     libgranite-7-dev
     libgtk-4-dev
-    libwingpanel-8-dev
+    libwingpanel-9-dev
     meson >= 0.58.0
     valac
 
