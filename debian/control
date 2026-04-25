@@ -1,7 +1,7 @@
 Source: io.elementary.panel.nightlight
 Section: x11
 Priority: optional
-Maintainer: elementary, Inc. <builds@elementary.io>
+Maintainer: elementary <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                libgirepository1.0-dev,
                libglib2.0-dev,
