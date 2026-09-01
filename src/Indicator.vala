@@ -18,15 +18,15 @@
  */
 
 public class Nightlight.Indicator : Wingpanel.Indicator {
-    private Gtk.Spinner? indicator_icon = null;
+    private NightlightIndicator.Symbol? indicator_icon = null;
     private Nightlight.Widgets.PopoverWidget? popover_widget = null;
 
     public bool nightlight_state {
         set {
             if (value) {
-                indicator_icon.remove_css_class ("disabled");
+                indicator_icon.state = NightlightIndicator.SymbolState.ACTIVE;
             } else {
-                indicator_icon.add_css_class ("disabled");
+                indicator_icon.state = NightlightIndicator.SymbolState.DISABLED;
             }
         }
     }
@@ -40,23 +40,14 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
 
     public override Gtk.Widget get_display_widget () {
         if (indicator_icon == null) {
-            indicator_icon = new Gtk.Spinner ();
+            indicator_icon = new NightlightIndicator.Symbol ("/io/elementary/wingpanel/nightlight/24/night-light.svg") {
+                pixel_size = 24
+            };
 
             // Prevent a race that skips automatic resource loading
             // https://github.com/elementary/wingpanel-indicator-bluetooth/issues/203
             unowned var default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/org/elementary/wingpanel/icons");
-
-            var provider = new Gtk.CssProvider ();
-            provider.load_from_resource ("io/elementary/wingpanel/nightlight/indicator.css");
-
-            Gtk.StyleContext.add_provider_for_display (
-                Gdk.Display.get_default (),
-                provider,
-                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-            );
-
-            indicator_icon.add_css_class ("night-light-icon");
 
             var click_gesture = new Gtk.GestureClick () {
                 button = Gdk.BUTTON_MIDDLE
