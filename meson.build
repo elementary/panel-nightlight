@@ -38,13 +38,14 @@ shared_module(
     'src/Indicator.vala',
     'src/Services/ColorInterface.vala',
     'src/Widgets/PopoverWidget.vala',
+    'src/Widgets/Symbol.vala',
     gresource,
     config_file,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7'),
-        dependency('gtk4'),
+        dependency('gtk4', version: '>= 4.22'),
         wingpanel_dep
     ],
     install: true,
