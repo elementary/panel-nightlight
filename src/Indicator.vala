@@ -109,10 +109,10 @@ public class Nightlight.Indicator : Wingpanel.Indicator {
     }
 }
 
-public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.IndicatorManager.ServerType server_type) {
+public Wingpanel.Indicator? get_indicator (Module module, Wingpanel.ServerType server_type) {
     debug ("Activating Nightlight Indicator");
 
-    if (server_type != Wingpanel.IndicatorManager.ServerType.SESSION) {
+    if (server_type != Wingpanel.ServerType.SESSION) {
         debug ("Wingpanel is not in session, not loading nightlight");
         return null;
     }
